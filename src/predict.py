@@ -20,7 +20,7 @@ def predict_new_apartment(new_apartment, model_path="catboost_moscow_housing.cbm
     predicted_price = cat.predict(new_df)
     return predicted_price[0]
 
-# === Пример использования ===
+# Пример использования
 if name == "main":
     new_apartment = {
         'Apartment type': 'Secondary',
